@@ -36,7 +36,7 @@
                     <tr>
                         <th>Element</th>
                         <th>Content purpose</th>
-                        <th>Normal-flow baseline</th>
+                        <th>Normal flow baseline</th>
                         <th>Chosen technique and why</th>
                         <th>Containing block / stacking context</th>
                         <th>Fallback or disengagement</th>
@@ -45,13 +45,58 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Example only</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
-                        <td>Replace</td>
+                        <td>Issue badge</td>
+                        <td>Displays the story category.</td>
+                        <td>Appears in the header.</td>
+                        <td>Absolute positioning places it in the corner of the header.</td>
+                        <td>The feature header is the containing block.</td>
+                        <td>Moves to the left side of the header on smaller screens.</td>
+                        <td>Check the badge at different screen sizes.</td>
+                    </tr>
+                    <tr>
+                        <td>Story guide</td>
+                        <td>Links readers to story sections.</td>
+                        <td>Appears before the article.</td>
+                        <td>Sticky positioning keeps it visible while scrolling.</td>
+                        <td>The story guide stays within its grid area and scrolling container.</td>
+                        <td>Sticky positioning is used only on wider screens.</td>
+                        <td>Test scrolling and section boundaries.</td>
+                    </tr>
+                    <tr>
+                        <td>Pull quote</td>
+                        <td>Highlights an important dining custom.</td>
+                        <td>Appears between paragraphs.</td>
+                        <td>Relative positioning and a negative margin create an overlap.</td>
+                        <td>The quote is positioned within the article and uses the raised layer token.</td>
+                        <td>Returns to normal flow on smaller screens.</td>
+                        <td>Check that text and content are not covered.</td>
+                    </tr>
+                    <tr>
+                        <td>Feature image</td>
+                        <td>Shows an example of Japanese food culture.</td>
+                        <td>Appears inside a figure with a caption.</td>
+                        <td>Clip path creates subtly rounded image corners.</td>
+                        <td>The image is inside the feature figure.</td>
+                        <td>Without clip path support, the image remains visible with square corners.</td>
+                        <td>Test with clip path disabled.</td>
+                    </tr>
+                    <tr>
+                        <td>Festival image</td>
+                        <td>Illustrates Japanese festivals and traditions.</td>
+                        <td>Appears before the related paragraphs.</td>
+                        <td>Border radius creates a circular image.</td>
+                        <td>No additional containing block is needed.</td>
+                        <td>The image remains visible without rounded corners.</td>
+                        <td>Check the image at different screen sizes.</td>
+                    </tr>
+                    <tr>
+                        <td>Festival image text wrap</td>
+                        <td>Allows text to flow around the image.</td>
+                        <td>Image and paragraphs remain in normal document order.</td>
+                        <td>Float, shape outside, and shape margin create circular text wrapping.</td>
+                        <td>The float affects text flow within the article section.</td>
+                        <td>Without shape outside support, the image remains a regular float and text wraps around its rectangular shape.</td>
+                        <td>Test with shape outside disabled.</td>
                     </tr>
                 </tbody>
             </table>
