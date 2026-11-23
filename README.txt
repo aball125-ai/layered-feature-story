@@ -1,9 +1,33 @@
-START HERE: This folder is the required scaffold for the Module 4 Assessment, not a finished composition.
+Layered Feature Story
+Author: Ashley Ball
 
-1. Rename the folder for your project and place it in a new repository or approved workspace.
-2. Choose one focused editorial story and replace every placeholder in index.html.
-3. Complete composition-plan.html before finalizing each positioned, layered, or shaped element.
-4. Keep the L1–L6 labels visible so assessment evidence is easy to locate.
-5. Merge your Module 1 reset, tokens, typography, and components into styles.css. Replace starter demonstrations with your own justified design; do not submit the starter styling unchanged.
-6. Preserve logical source order. Use Grid/Flexbox for primary layout and positioning only for bounded spatial relationships.
-7. Use native HTML and CSS only—no JavaScript. Test all enhancements and their fallbacks according to the Canvas instructions.
+Overview
+My project is a responsive editorial feature story on the topic of Japanese culture, utilizing both imagery and article copy to produce an immersive reading experience.
+
+Website
+Published Website: https://aball125-ai.github.io/layered-feature-story/
+GitHub Repository: https://github.com/aball125-ai/layered-feature-story
+
+Design & Development
+The site was built using HTML and CSS and includes:
+- Responsive layouts with CSS Grid.
+- Sticky story navigation.
+- Layered pull quotes and positioning.
+- Circular portrait styling.
+- Reusable CSS custom properties for colors, space, typography, and layers.
+- Responsive design for various screen sizes.
+
+Project Files
+- `index.html` – Main feature story webpage.
+- `styles.css` – Website style and responsive layouts.
+- `composition-plan.html` – Composition and layout planning.
+- `feature.svg` and `portrait.svg` – SVG graphics.
+- Image files – Visual assets for the story.
+
+Testing
+HTML/CSS validation errors were found and fixed, and testing was conducted for responsive layouts, reading order, sticky navigation, pointer activation, and layers.
+
+Technologies
+- HTML5
+- CSS3
+- GitHub Pages

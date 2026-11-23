@@ -163,23 +163,21 @@ img {
     main{
         grid-template-columns:14rem 1fr;
     }
-    .story-guide{
+   .story-guide{
         position:sticky;
         inset-block-start:1rem;
+        z-index:var(--layer-sticky);
     }
     .pull-quote{
         position:relative;
         z-index:var(--layer-raised);
         margin-inline-start:-4rem;
-        background:var(--color-surface);;
+        background:var(--color-surface);
     }
-    @supports (shape-outside:circle(50%)){
-        .shape-portrait{
-            float:inline-start;
-            shape-outside:circle(50%);
-            shape-margin:1.5rem;}
-        }
+    .shape-portrait{
+        float:left;
     }
+}
     @media (max-width: 600px) {
         .feature-header {
             position: relative;
